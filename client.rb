@@ -10,4 +10,4 @@ while line = sock.gets
   puts line.chop
 end
 
-s.close
+sock.close
