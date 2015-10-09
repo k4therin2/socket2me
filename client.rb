@@ -1,7 +1,7 @@
 require 'socket'
 
 hostname = 'localhost'
-port = 2000
+port = 5251 
 
 sock = TCPSocket.open(hostname, port)
 
