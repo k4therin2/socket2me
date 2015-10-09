@@ -1,6 +1,7 @@
 require 'socket'
+require_relative 'configs.rb'
 
-server = TCPServer.open(5251)
+server = TCPServer.open(@port)
 loop{
   client = server.accept #wait for a client to connect
   puts 'Someone is here!'

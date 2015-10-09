@@ -1,10 +1,7 @@
 require 'socket'
+require_relative 'configs.rb'
 
-hostname = 'localhost'
-port = 5251 
-
-sock = TCPSocket.open(hostname, port)
-
+sock = TCPSocket.open(@hostname, @port)
 
 while line = sock.gets
   puts line.chop
